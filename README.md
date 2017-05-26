@@ -9,6 +9,7 @@ Run `carthage update` to download and compile the required frameworks.
 
 ## Usage
 Select a port and a baud rate - SerialTyper will automatically try to connect to the port.
+
 ![image](https://cloud.githubusercontent.com/assets/2101850/26487976/f185e300-4201-11e7-8f8d-2f23132ae0a9.png)
 
 ## Todo
