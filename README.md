@@ -13,6 +13,7 @@ Select a port and a baud rate - SerialTyper will automatically try to connect to
 ![image](https://cloud.githubusercontent.com/assets/2101850/26487976/f185e300-4201-11e7-8f8d-2f23132ae0a9.png)
 
 ## Todo
+- Improve status visibility (using colors/animations on the menu bar icon)
 - Improve Error handling
 - Add more configuration
 - Automatically connect when a port becomes available
