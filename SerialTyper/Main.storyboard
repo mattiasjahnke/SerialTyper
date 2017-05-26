@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <customObject id="2CV-dc-NYe" customClass="SerialTyper" customModule="SerialTyper" customModuleProvider="target">
+                    <connections>
+                        <outlet property="menuHandler" destination="I2c-dl-JB7" id="m4j-hy-efk"/>
+                    </connections>
+                </customObject>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu id="ppO-7o-mLd">
+                    <items>
+                        <menuItem title="Port" id="7Vc-SY-aPT">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <menu key="submenu" title="Port" id="I8V-lH-DJT">
+                                <items>
+                                    <menuItem title="Item" id="pt9-W0-d5T">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </menuItem>
+                        <menuItem title="Baud rate" id="qz7-hw-YK6">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <menu key="submenu" title="Baud rate" id="VGv-t9-E2Q">
+                                <items>
+                                    <menuItem title="Item" id="pqK-vP-GfU">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </menuItem>
+                        <menuItem title="Quit" id="TRl-Fc-lw7">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="quitClicked:" target="I2c-dl-JB7" id="RZh-5W-oh0"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SerialTyper" customModuleProvider="target"/>
+                <customObject id="I2c-dl-JB7" customClass="MenuHandler" customModule="SerialTyper" customModuleProvider="target">
+                    <connections>
+                        <outlet property="availableBaudRateMenu" destination="VGv-t9-E2Q" id="WXW-o4-ekw"/>
+                        <outlet property="availablePortsMenu" destination="I8V-lH-DJT" id="apk-M2-kve"/>
+                        <outlet property="baudRateMenuItem" destination="qz7-hw-YK6" id="uUY-NB-3M8"/>
+                        <outlet property="portMenuItem" destination="7Vc-SY-aPT" id="dG6-7Y-Bfa"/>
+                        <outlet property="statusMenu" destination="ppO-7o-mLd" id="sxO-FW-672"/>
+                    </connections>
+                </customObject>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6"/>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
